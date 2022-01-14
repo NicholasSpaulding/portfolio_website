@@ -1,0 +1,24 @@
+import Hero from "../components/Hero/Hero";
+import ParticleBackground from "../components/ParticleBackground/ParticleBackground";
+import Projects from "../components/Projects/Projects";
+import Technologies from "../components/Technologies/Technologies";
+import Timeline from "../components/TimeLine/TimeLine";
+import { Layout } from "../layout/Layout";
+import { Section } from "../styles/GlobalComponents";
+
+const Home = () => {
+  <script src="particles.js"></script>;
+  return (
+    <Layout>
+      <ParticleBackground />
+      <Section grid>
+        <Hero />
+      </Section>
+      <Projects />
+      <Technologies />
+      <Timeline />
+    </Layout>
+  );
+};
+
+export default Home;
